@@ -1,53 +1,103 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
   <meta charset="utf-8">
-  <link href="https://framework-gb.cdn.gob.mx/snd/v1.1.0/snd-guinda.css" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
   <title>
-    PLAYMOVIL
+    [EJPG]-Encuesta
   </title>
 </head>
 
 <body>
-  <div class="contenedor">
+  <div>
     <img src="banner.jpg" alt="" width="100%">
-    <h1 class="patria">
+    <h1>
       Playmovil.web
     </h1>
-    <h2 class="patria">
+    <h2>
       Welcome to the best site of the word
     </h2>
     <p>
-      En este sitio encontraras el mejor contenido de información referente a las Tecnologias a nivel muldia.
+      En este sitio encontraras el mejor contenido para Desarrolladores de Software.
+      ¡Suscríbete!
     </p>
 
-    <a href="https://home.ingti.workers.dev/" class="patria" target="_blank">Click aquí para ver los servicios</a>
+    <form action="procesa-datos.html" method="post">
+      <fieldset>
+        <legend>
+          <h3>1.- Datos personales</h3>
+        </legend>
+        <label for="nombre">Nombre: </label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre"><br><br>
 
-    <ol>
-      <li>Desarrollo Web</li>
-      <li>Redes Empresariales</li>
-      <li>CCTV - Videovigilancia</li>
-      <li>Soporte TIC's</li>
-    </ol>
+        <label for="apellido_paterno">Apellido paterno: </label>
+        <input type="text" id="ap_paterno" name="ap_paterno" placeholder="Ingresa tu apellido paterno"><br><br>
 
-    <ul>
-      <li>Infraestructura de Redes y Cableado
-        Diseño, instalación, certificación y configuración de infraestructura de voz, datos y redes para empresas.</li>
-      <li>
-        Equipo Informático
-        Renta o adquisición de computadoras, laptops, impresoras y equipo tecnológico para la operación empresarial.
-      </li>
-      <li>
-        Videovigilancia y Seguridad
-        Diseño, suministro, instalación y configuración de sistemas de cámaras y soluciones de seguridad electrónica.
-      </li>
-      <li>
-        Mantenimiento y Soporte TIC
-        Mantenimiento preventivo y correctivo, soporte técnico y gestión integral de infraestructura tecnológica.
-      </li>
-    </ul>
-  </div>
+        <label for="apellido_materno">Apellido materno: </label>
+        <input type="text" id="ap_materno" name="ap_materno" placeholder="Ingresa tu apellido materno"><br><br>
+
+        <label for="correo">Correo electrónico</label>
+        <input type="email" name="correo" id="correo" placeholder="Ingresa tu correo electrónico"><br><br>
+
+        <label for="edad">Edad (18 a 99 años):</label>
+        <input type="number" name="edad" id="edad" min="18" max="99"><br><br>
+
+        <label for="genero">Genero:</label>
+        <select name="genero" id="genero">Selecciona...
+          <option value="femenino">Femenino</option>
+          <option value="masculino">Masculino</option>
+          <option value="lgtb">LGTB+</option>
+        </select><br><br>
+
+      </fieldset>
+      <fieldset>
+        <legend>
+          <h3>2.- Preguntas de selección múltiple</h3>
+        </legend>
+
+        <label for="areaDesarrollo"><strong>¿Qué área del desarrollo web prefieres?</strong></label>
+        <label for="Frontend">
+          <input type="radio" name="area" id="area" value="Frontend" required> Frontend
+        </label>
+        <label for="Backend">
+          <input type="radio" name="area" id="area" value="Backend" required> Backend
+        </label>
+        <label for="Full Stack">
+          <input type="radio" name="area" id="area" value="Full Stack" required> Full Stack
+        </label>
+        <label for="UI/UX">
+          <input type="radio" name="area" id="area" value="UI/UX" required> Diseño UI/UX
+        </label>
+        <hr>
+
+        <label for="lenguajes"><strong>¿Qué lenguajes de programación utilizas?</strong></label>
+        <label for="JavaScript">
+          <input type="checkbox" name="lenguaje" id="lenguaje" value="JavaScript">JavaScript
+        </label>
+        <label for="Python">
+          <input type="checkbox" name="lenguaje" id="lenguaje" value="Python">Python
+        </label>
+        <label for="PHP">
+          <input type="checkbox" name="lenguaje" id="lenguaje" value="PHP">PHP
+        </label>
+        <label for="TypeScript">
+          <input type="checkbox" name="lenguaje" id="lenguaje" value="TypeScript">TypeScript
+        </label>
+
+
+
+
+
+
+
+
+      </fieldset>
+      <input type="button" value="Enviar...">
+      <input type="reset" value="Borrar formulario">
+
+    </form>
+
 </body>
 
 </html>
