@@ -23,34 +23,40 @@
       ¡Suscríbete!
     </p>
 
-    <form action="procesa-datos.html" method="post">
+    <form action="procesa-datos.php" method="post">
+
+      <!--SECCION DE ENTRADA DE DATOS DE TIPO TEXTO-->
       <fieldset>
         <legend>
           <h3>1.- Datos personales</h3>
         </legend>
         <label for="nombre">Nombre: </label>
-        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre"><br><br>
+        <input type="text" id="nombre" name="nombre" maxlength="50" placeholder="Ingresa tu nombre" required><br><br>
 
         <label for="apellido_paterno">Apellido paterno: </label>
-        <input type="text" id="ap_paterno" name="ap_paterno" placeholder="Ingresa tu apellido paterno"><br><br>
+        <input type="text" id="ap_paterno" name="ap_paterno" maxlength="50" placeholder="Ingresa tu apellido paterno"
+          required><br><br>
 
         <label for="apellido_materno">Apellido materno: </label>
-        <input type="text" id="ap_materno" name="ap_materno" placeholder="Ingresa tu apellido materno"><br><br>
+        <input type="text" id="ap_materno" name="ap_materno" maxlength="50" placeholder="Ingresa tu apellido materno"
+          required><br><br>
 
         <label for="correo">Correo electrónico</label>
-        <input type="email" name="correo" id="correo" placeholder="Ingresa tu correo electrónico"><br><br>
+        <input type="email" name="correo" id="correo" placeholder="Ingresa tu correo electrónico" required><br><br>
 
         <label for="edad">Edad (18 a 99 años):</label>
-        <input type="number" name="edad" id="edad" min="18" max="99"><br><br>
+        <input type="number" name="edad" id="edad" min="18" max="99" required><br><br>
 
         <label for="genero">Genero:</label>
-        <select name="genero" id="genero">Selecciona...
+        <select name="genero" id="genero" required>Selecciona...
           <option value="femenino">Femenino</option>
           <option value="masculino">Masculino</option>
           <option value="lgtb">LGTB+</option>
         </select><br><br>
 
       </fieldset>
+
+      <!--SECCION DE OPCIONES UNICAS O MULTIPLES-->
       <fieldset>
         <legend>
           <h3>2.- Preguntas de selección múltiple</h3>
@@ -58,16 +64,16 @@
 
         <label for="areaDesarrollo"><strong>¿Qué área del desarrollo web prefieres?</strong></label>
         <label for="Frontend">
-          <input type="radio" name="area" id="area" value="Frontend" required> Frontend
+          <input type="radio" name="area" id="area" value="Frontend"> Frontend
         </label>
         <label for="Backend">
-          <input type="radio" name="area" id="area" value="Backend" required> Backend
+          <input type="radio" name="area" id="area" value="Backend"> Backend
         </label>
         <label for="Full Stack">
-          <input type="radio" name="area" id="area" value="Full Stack" required> Full Stack
+          <input type="radio" name="area" id="area" value="Full Stack"> Full Stack
         </label>
         <label for="UI/UX">
-          <input type="radio" name="area" id="area" value="UI/UX" required> Diseño UI/UX
+          <input type="radio" name="area2" id="area" value="UI/UX"> Diseño UI/UX
         </label>
         <hr>
 
@@ -84,17 +90,21 @@
         <label for="TypeScript">
           <input type="checkbox" name="lenguaje" id="lenguaje" value="TypeScript">TypeScript
         </label>
+      </fieldset>
 
-
-
-
-
-
-
+      <!--SECCION DE ENTRADA DE DATOS DE TIPO TEXTO MULTILINE-->
+      <fieldset>
+        <legend>
+          <h3>3. Comentarios finales</h3>
+        </legend>
+        <label for="comentarios">Comentarios o Sugerencias</label><br>
+        <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
 
       </fieldset>
-      <input type="button" value="Enviar...">
-      <input type="reset" value="Borrar formulario">
+
+      <button type="submit">Enviar...</button>
+      <br><br>
+      <button type="reset">Borrar formulario</button>
 
     </form>
 
