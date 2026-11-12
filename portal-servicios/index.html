@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portal de Servicios Ciudadanos</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/estilo.css">
+
+
+</head>
+
+<body>
+    <!-- Contenido -->
+    <header class="encabezado-sitio" id="inicio">
+        <h1>Portal de Servicios Ciudadanos de Salud</h1>
+    </header>
+
+    <nav class="navegacion-sitio" aria-label="principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#requisitos">Requisitos</a>
+        <a href="#ubicacion">Ubicación</a>
+        <a href="#citas">Citas</a>
+    </nav>
+    <hr>
+
+    <main id="servicios" aria-label="Servicios de Salud">
+        <section class="grid-servicios">
+            <article class="tarjeta-servicio">
+                <img src="assets/img/01.jpg" alt="Servicios de Salud">
+                <h2>Servicio Universal de Salud</h2>
+                <p>Accede a servicios médicos en clínicas u hospitales públicos de la red, sin importar si cuentas o no
+                    con seguridad social a partir de 2027.</p>
+            </article>
+            <article class="tarjeta-servicio">
+                <img src="assets/img/02.jpg" alt="Módulos del Bienestar">
+                <h2>Módulos del Bienestar</h2>
+                <p>Acude a tu Módulo del Bienestar más cercano para tramitar tu Credencial de Salud y comenzar a usar el
+                    SUS.</p>
+            </article>
+            <article class="tarjeta-servicio">
+                <img src="assets/img/03.jpg" alt="Módulos del Bienestar">
+                <h2>¿Cómo accedo al SUS?</h2>
+                <p>Accede a servicios médicos en cualquier institución de la red con tu Credencial de Salud, sin
+                    importar si cuentas o no con seguridad social.
+                </p>
+            </article>
+        </section>
+    </main>
+    <hr>
+
+
+    <main id="requisitos" aria-label="Requisitos">
+        <h1>¿Cómo me registro?</h1><br>
+        <section class="grid-requisitos">
+            <article class="requisitos">
+                <span class="numero"><strong>1</strong></span>
+                <h3>Revisa la sección del calendario y acude al módulo del Bienestar que te corresponde.</h3>
+            </article>
+            <article class="requisitos">
+                <span class="numero"><strong>2</strong></span>
+                <h3>Entrega la documentación.</h3>
+            </article>
+
+            <article class="requisitos">
+                <span class="numero"><strong>3</strong></span>
+                <h3>Firma el consentimiento para registrar tus datos personales y de identidad.</h3>
+            </article>
+        </section>
+    </main>
+    <hr>
+
+    <main id="ubicacion" aria-label="ubicacion">
+        <h1>Ubicación</h1>
+        <section class="tarjeta-ubicacion">
+
+            <div class="direccion">
+                <p>
+                    Calle Agrarismo No. 227 Colonia Escandón II Sección 11800 Ciudad de México<br><br>
+                    Teléfono: 654-987-654 <br><br>
+                    Atención <br><br><a href="https://contactociudadano.mx"
+                        target="_blank">https://contactociudadano.mx</a><br>
+
+                </p>
+
+            </div>
+
+            <div class="mapa">
+                <iframe class="mapa"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1881.6504908377208!2d-99.17516356628991!3d19.39939727955639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff004a78d7c1%3A0x5c1ab78b1974533a!2sServicio%20Nacional%20de%20Salud%20P%C3%BAblica%20(SNSP)!5e0!3m2!1ses!2smx!4v1794494228817!5m2!1ses!2smx"
+                    width="600px" height="800px" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+            </div>
+
+        </section>
+    </main>
+    <hr>
+
+    <main id="citas" aria-label="agendar cita">
+        <h1>Agenda tu cita con nosotros.</h1>
+        <section class="tarjeta-formulario">
+            <form action="contacto.php" method="post" class="formulario">
+                <fieldset>
+                    <legend>Registro de citas.</legend>
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" name="nombre" id="nombre" required>
+                    <br><br>
+
+                    <label>Correo electrónico:</label>
+                    <input type="email" name="correo" required>
+                    <br><br>
+
+                    <label>Teléfono:</label>
+                    <input type="tel" name="telefono" required>
+                    <br><br>
+
+                    <label>Fecha de la cita:</label>
+                    <input type="fecha" name="fecha" required>
+                    <br><br>
+
+                    <label>Hora de la cita:</label>
+                    <input type="time" name="hora" required>
+                    <br><br>
+
+                    <label>Motivo de la cita:</label>
+                    <textarea name="motivo" cols="70" rows="10"></textarea>
+                    <br><br>
+
+                    <button type="submit">Agendar cita</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer class="pie-sitio">
+        <p>&copy; [EJPG] 2026 Portal de Servicios Ciudadanos</p>
+    </footer>
+
+    <!-- JS -->
+
+</body>
+
+</html>
