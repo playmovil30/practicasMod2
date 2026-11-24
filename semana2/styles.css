@@ -1,0 +1,22 @@
+/* 1️. Descendiente (espacio): selecciona todos los <p> dentro de un <div> */
+div p {
+  color: blue;
+}
+
+/* 2️. Hijo directo (>):
+     selecciona solo los <p> que son hijos inmediatos del <div> */
+div>p {
+  font-weight: bold;
+}
+
+/* 3️. Adyacente (+):
+     selecciona el primer <p> que está justo después de un <div> */
+div+p {
+  color: red;
+}
+
+/* 4️. General (~):
+     selecciona todos los <p> que están después del <div>, sin importar cuántos haya */
+div~p {
+  background-color: #ffff99;
+}

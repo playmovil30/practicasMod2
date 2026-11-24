@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Modelo de cajas para párrafos y encabezados */
+p, h1, h2, h3 {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid transparent;
+    color: rgb(227, 49, 255);
+}
+
+/* Listas */
+ul {
+    list-style-type: square;
+    margin: 10px 0 10px 20px;
+    padding: 10px;
+    color: #632668;
+}
+
+/* Enlaces */
+a {
+    color: #632668;
+    text-decoration: none;
+    padding: 5px;
+}
+
+/* Fieldset */
+fieldset {
+    border: 2px solid #6899dc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Leyendas */
+legend {
+    font-weight: bold;
+    color: #49568b;
+    padding: 5px 10px;
+}
+
+/* Etiquetas */
+label {
+    display: block;
+    margin-bottom: 5px;
+    padding: 3px;
+    color: #ffffff;
+}
+
+/* Campos de formulario */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Radio y checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: red;
+    margin: 5px;
+}
+
+/* Botones */
+button {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid slateblue;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+    color: white;
+    background-color: slateblue;
+}

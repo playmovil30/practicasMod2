@@ -1,0 +1,29 @@
+/* Navbar */
+.navbar {
+    min-height: 75px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+/* Enlaces */
+.navbar .nav-link {
+    color: #343a40;
+    transition: all 0.3s ease;
+}
+
+/* Hover */
+.navbar .nav-link:hover {
+    color: #198754;
+    background-color: rgba(25, 135, 84, 0.10);
+}
+
+/* Enlace activo */
+.navbar .nav-link.active {
+    color: #198754;
+    background-color: rgba(25, 135, 84, 0.15);
+}
+
+/* Logo */
+.navbar-brand {
+    letter-spacing: 0.5px;
+}
